@@ -1,0 +1,106 @@
+.login {
+  width: 410px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login h2 {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+  border-bottom: 2px solid #111;
+}
+
+.login > ul {
+  padding: 20px 0;
+  text-align: left;
+}
+
+.login > ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.login > ul li input[type='text'] {
+  height: 46px;
+  box-sizing: border-box;
+}
+
+.login > ul li input[type='password'] {
+  height: 46px;
+  box-sizing: border-box;
+}
+
+.login > ul li input::-webkit-input-placeholder {
+  color: #060505;
+}
+
+.login > ul li input[type='checkbox'] {
+  position: absolute;
+  left: -3000000%;
+}
+
+.login > ul li input[type='checkbox'] + label:before {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cab5b5;
+  background-color: #fff;
+  vertical-align: -5px;
+  margin-right: 10px;
+}
+
+.login > ul li input[type='checkbox']:checked + label:before {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid blue;
+  background-color: blue;
+  vertical-align: -5px;
+  margin-right: 10px;
+}
+
+.login > ul li input[type='checkbox']:checked + label {
+  color: blue;
+}
+
+.login button {
+  width: 100%;
+  height: 42px;
+  color: white;
+  background-color: blue;
+}
+
+.login div {
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login div ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login div ul li {
+  padding: 0 18px;
+  position: relative;
+}
+
+.login div ul li ~ li::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 1px;
+  background: #111;
+  transform: rotate(25deg);
+}
+
+.login div > a {
+  border-bottom: 1px solid #111;
+}

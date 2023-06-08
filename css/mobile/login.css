@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@400;600&display=swap');
+@import '/css/default.css';
+@import '/css/variable/variable.css';
+@import '/css/mobile_component/status-bar.css';
+
+* {
+  font-size: 17px;
+  font-family: 'Noto Sans KR', 'Open Sans', sans-serif;
+}
+
+.welcome-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+  text-align: center;
+}
+
+.welcome-header__title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.welcome-header__text {
+  font-weight: 500;
+  color: #727272;
+}
+
+#login-form {
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  box-sizing: border-box;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 16px;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+#login-form input::placeholder {
+  margin-left: 0px;
+  font-size: 15px;
+  color: #111;
+  opacity: 0.3;
+}
+
+#login-form input:not([type='submit']) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-form input:focus:not([type='submit']) {
+  border-color: var(--yellow);
+  transition: border-color 0.5s ease-in-out;
+}
+
+#login-form input[type='submit'] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+}

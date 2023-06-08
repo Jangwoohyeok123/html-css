@@ -1,0 +1,14 @@
+.hidden {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.logo > a > img {
+  width: 280px;
+  height: 70px;
+}

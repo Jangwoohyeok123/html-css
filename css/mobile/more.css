@@ -1,0 +1,84 @@
+@import '/css/default.css';
+@import '/css/variable/variable.css';
+@import '/css/mobile_component/screen-header.css';
+@import '/css/mobile_component/nav-bar.css';
+@import '/css/mobile_component/user.css';
+@import '/css/mobile_component/badge.css';
+@import '/css/mobile_component/main-screen.css';
+
+.user-component__image--xl {
+  border-radius: 25px;
+}
+
+.fa-envelope-open-text {
+  font-size: 30px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.user-component__subtitle {
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.user-service {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--gray--lg);
+}
+
+.user-service__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+}
+
+.user-service__item > i {
+  font-size: 32px;
+  opacity: 0.9;
+}
+
+.suggestions__header {
+  display: block;
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 5px 30px;
+}
+
+.suggestions__services {
+  display: flex;
+}
+
+.suggestions__service {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestions__service > i {
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+/*
+.user-component__subtitle::after {
+  position: absolute;
+  font-size: 15px;
+  top: 5px;
+  right: -15px;
+  content: '!';
+  color: red;
+  width: 12px;
+  height: 12px;
+  border-radius: 9px;
+  border: 1px solid red;
+}
+*/

@@ -1,0 +1,128 @@
+@import '/css/default.css';
+@import '/css/variable/variable.css';
+@import '/css/mobile_component/screen-header.css';
+@import '/css/mobile_component/nav-bar.css';
+@import '/css/mobile_component/badge.css';
+
+* {
+  max-height: 600px;
+  color: var(--black);
+  font-size: 14px;
+  font-family: 'Noto Sans KR', 'Open Sans', sans-serif;
+}
+
+.main-screen {
+  padding: var(--horizantal-space);
+  margin-top: -30px;
+}
+
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray--lg);
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.find-icons__icon i {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.find-icons__icon span {
+  font-size: 12px;
+}
+
+.recommended-friends {
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--gray--lg);
+}
+
+.recommended-friends__title {
+  font-size: 10px;
+  color: gray;
+  font-weight: 400;
+}
+
+.recommended-friends__subtitle {
+  padding: 50px 0px;
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+}
+
+.open-chat__header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-chat__header span {
+  color: gray;
+  font-size: 10px;
+}
+
+.open-post__column {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+  height: 100px;
+}
+
+.open-post__column:last-child {
+  margin-bottom: 50px;
+}
+
+.open-post__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.open-post__title {
+  font-size: 25px;
+}
+
+.open-post__hashtags {
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.open-post__members > img {
+  width: 13px;
+  border-radius: 3px;
+}
+
+.open-post__members > span {
+  vertical-align: bottom;
+}
+
+.open-post__status {
+  margin-left: 10px;
+  color: red;
+  position: relative;
+}
+
+.open-post__status::before {
+  content: '';
+  position: absolute;
+  top: 1.5px;
+  left: -7px;
+  width: 1px;
+  height: 100%;
+  background: #111;
+  opacity: 0.2;
+}
+
+.open-post__image {
+  width: 100px;
+  height: 100%;
+  border-radius: 5px;
+}

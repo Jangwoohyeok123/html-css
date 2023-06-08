@@ -1,0 +1,62 @@
+@import '/css/default.css';
+@import '/css/variable/variable.css';
+@import '/css/mobile_component/screen-header.css';
+@import '/css/mobile_component/user.css';
+@import '/css/mobile_component/nav-bar.css';
+@import '/css/mobile_component/badge.css';
+
+* {
+  max-height: 600px;
+  color: var(--black);
+  font-size: 14px;
+  font-family: 'Noto Sans KR', 'Open Sans', sans-serif;
+}
+
+#friends-display-link {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  background-color: #f1f3f5;
+  padding: var(--horizantal-space);
+  margin-bottom: 5px;
+}
+
+#friends-display-link i {
+  opacity: 0.3;
+}
+
+.user-component:first-child {
+  border-bottom: 1px solid var(--gray--lg);
+  padding-bottom: 15px;
+  margin-bottom: 7px;
+}
+
+.main-screen {
+  padding: var(--horizantal-space);
+}
+
+.friends-screen__channel > div ~ div {
+  padding-top: 10px;
+}
+
+.friends-screen > .user-component {
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.friends-screen__channel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friends-screen__channel-header i {
+  position: relative;
+  top: 5.5px;
+}
+
+.friends-screen__channel > .user-component {
+  display: flex;
+  justify-content: space-between;
+}
