@@ -1,0 +1,149 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --white: hsl(0, 0%, 100%);
+  --font-size: 13px;
+}
+
+/* hsl (색조, 채도, 명도)*/
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img,
+ion-icon {
+  display: block;
+  color: #222;
+}
+
+html {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+  padding: 20px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.article-card {
+  display: grid;
+  grid-template-columns: 285px minmax(300px, 445px);
+  max-width: 730px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px hsla(0, 0%, 0%, 0.02), 25px 25px 20px hsla(0, 0%, 0%, 0.02), 100px 100px,
+    80px hsla(0, 0%, 0%, 0.05);
+}
+
+.img-box {
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+}
+
+.article-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  transition: all 0.3s ease;
+}
+
+/* article-card 가 hover 일 때, .article-banner 는 */
+/* transform 을 주기 위해서는 img 등이 꽉 채워진 것이 자연스럽다. */
+.article-card:hover .article-banner {
+  transform: scale(1.1);
+}
+
+/* padding 과 margin 은 여백이라는 점에서 공통점이 있지만 사용자에 클릭이 가능한 영역의 차이가 차이가 된다. */
+.article-content {
+  background: var(--white);
+  padding: 32px 40px;
+  border-radius: 0 10px;
+}
+
+.article-title {
+  font-size: 20px;
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 12px;
+  line-height: 28px;
+}
+
+.article-text {
+  font-size: 14px;
+  color: var(--desaturated-dark-blue);
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.article-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.author-name {
+  color: var(--very-dark-grayish-blue);
+  font-size: 14px;
+}
+
+.publish-data {
+  text-align: var(--very-dark-grayish-blue);
+}
+
+.share {
+  position: relative;
+}
+
+.share-button {
+  background: var(--light-grayish-blue);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--desaturated-dark-blue);
+  transition: all 0.2s ease;
+}
+
+.share-button:hover,
+.share-button:active {
+  color: var(--light-grayish-blue);
+  background: var(--desaturated-dark-blue);
+}
+
+.share-option {
+  --scale: 1;
+  --translateX: -50%;
+}

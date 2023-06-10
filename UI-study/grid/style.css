@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: grid;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  grid-template-rows: repeat(3, minmax(20px, auto));
+  grid-template-columns: repeat(3, minmax(20px, auto));
+}
+
+.item {
+  border: 1px solid black;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
+.item:active {
+  background-color: aqua;
+}
+
