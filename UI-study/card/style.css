@@ -131,19 +131,144 @@ body {
 .share-button {
   background: var(--light-grayish-blue);
   padding: 6px;
-  border-radius: 50%;
+  border-radius: 20px;
   font-size: 20px;
   color: var(--desaturated-dark-blue);
   transition: all 0.2s ease;
 }
 
 .share-button:hover,
-.share-button:active {
-  color: var(--light-grayish-blue);
+.share-button.active {
+  transform: scale(1.1);
   background: var(--desaturated-dark-blue);
+  color: var(--light-grayish-blue);
 }
 
 .share-option {
   --scale: 1;
   --translateX: -50%;
+  --translateY: 0;
+
+  background: var(--very-dark-grayish-blue);
+  position: absolute;
+  bottom: calc(100% + 28px);
+  left: 50%;
+  transform: translateX(var(--translateX)) translateY(var(--translateY)) scale(var(--scale));
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px -5px #0003;
+  transform-origin: bottom;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.share-option.active {
+  --visible: 1;
+  opacity: 1;
+}
+
+.share-option::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: var(--very-dark-grayish-blue);
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  transform: rotate(45deg) translateY(-70%);
+}
+
+.share-option span {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--grayish-blue);
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.share-option ion-icon {
+  font-size: 22px;
+  color: var(--white);
+}
+
+.share-option ion-icon:hover,
+.article-title:hover,
+.author-name:hover {
+  filter: invert(1);
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-px: 12px;
+  }
+
+  .article-card {
+    grid-template-columns: 1fr;
+    max-width: 294px;
+  }
+
+  .img-box,
+  .article-content {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .img-box {
+    height: 180px;
+  }
+
+  .article-content {
+    padding: 30px 28px 20px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .article-title {
+    font-size: 15px;
+  }
+
+  .article-text {
+    margin-bottom: 30px;
+  }
+
+  .article-content-footer {
+    position: relative;
+  }
+
+  .author-avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .share {
+    position: static;
+    z-index: 1;
+  }
+
+  .share-button {
+    font-size: 16px;
+  }
+
+  .share-option {
+    --scale: 1;
+    --translateX: 0%;
+    --translateY: 0;
+
+    inset: -20px -28px;
+    border-radius: 0 0 7px 7px;
+    padding: 17px 30px;
+    z-index: -1;
+  }
+
+  .share-option.active {
+    --translateY: 0;
+  }
+
+  .share-option::after {
+    display: none;
+  }
 }
