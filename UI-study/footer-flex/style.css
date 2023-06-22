@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-transform: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 11.5px;
+}
+
+body {
+  overflow: hidden;
+}
+
+ion-icon {
+  font-size: 20px;
+  transition: all 0.2s ease-in;
+  background-color: #999;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+ion-icon:hover,
+ion-icon:active {
+  background-color: tomato;
+  cursor: pointer;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  color: tomato;
+  cursor: pointer;
+}
+
+/*
+  default end-line
+*/
+
+.footer {
+  width: 100%;
+  padding: 30px 60px 20px 110px;
+  margin-top: 10px;
+  border-top: 1px solid #999;
+}
+
+.footer_contents {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+  width: 1100px;
+  height: 80px;
+}
+
+.footer_icons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* 웹 요소를 컴포넌트로 쓰고 싶다면, 가장 상위요소에 display 를 주지 않고 아래부터 준다.*/
+
+/* 
+  ------------------------------------------------------------------------
+*/
+
+.footer_links {
+  display: flex;
+  column-gap: 10px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.footer_links > a:hover,
+.footer_links > a:active {
+  cursor: pointer;
+}
+
+/* 
+  footer-informations
+*/
+
+.footer_informations {
+  display: flex;
+  column-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer_informations > li,
+span {
+  font-size: 11px;
+  color: #888;
+}
+
+.footer_informations .accent {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.accent-pinset {
+  font-weight: 600;
+}
+
+.footer_informations > li:not(:last-child)::after {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #888;
+  position: relative;
+  left: 7.5px;
+}
+
+.footer_informations > li:nth-child(4)::after {
+  display: none;
+}
+
+/* 
+  footer_icons
+*/
+
+.footer_icons {
+  display: flex;
+  column-gap: 5px;
+  padding-left: 50px;
+}
+
+/*  
+	responsive setting
+	max: 768
+	max: 1200
+*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  footer {
+    border-top: 1px solid #999;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ion-icon {
+    font-size: 10px;
+  }
+}

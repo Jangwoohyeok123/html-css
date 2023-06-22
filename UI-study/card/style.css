@@ -46,7 +46,10 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* border 까지가 box 다. border 까지 width, height 가 적용됨 */
 }
+
+/* default css */
 
 .article-card {
   display: grid;
@@ -59,7 +62,7 @@ body {
 
 .img-box {
   border-radius: 10px 0 0 10px;
-  overflow: hidden;
+  overflow: hidden; /* grid 의 자식요소는 기본적으로 auto 를 갖는다. (scroll)*/
 }
 
 .article-banner {
