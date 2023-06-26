@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; list-style: none; text-decoration: none; color: #111; box-sizing: border-box; } 
+:root { --blue: #042e6f; --white: #f2f2f2; } 
+
+header { background: linear-gradient(to right, var(--blue), var(--blue) 50%, var(--white), var(--white) 50%); padding: 0 30px; } 
+
+/* logo */
+header #logo { position: absolute; left: 30px; } 
+
+/* local navigation */
+header #lnb { position: absolute; } 
+
+/* user */
+header #user { position: absolute; right: 30px; display: flex; width: 170px; } 
+header #user > li { flex: 1; line-height: 70px; } 
+header #user > li:first-child > a::before { display: inline-block; content: ""; width: 23px; height: 23px; background: url(https://www.centreville.co.kr/resources/common/img/icon.png) no-repeat; vertical-align: middle; } 
+header #user > li:last-child > a::before { display: inline-block; content: ""; width: 23px; height: 23px; background: url(https://www.centreville.co.kr/resources/common/img/icon.png) no-repeat -23px 0px; vertical-align: middle; } 
+
+/* header background img */
+header .visual img { width: 100%; } 

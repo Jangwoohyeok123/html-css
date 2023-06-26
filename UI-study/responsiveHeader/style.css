@@ -1,39 +1,39 @@
-* {padding: 0;margin: 0;box-sizing: border-box; } 
+* { padding: 0; margin: 0; box-sizing: border-box; } 
 
-a {text-decoration: none;color: #111; } 
+a { text-decoration: none; color: #111; } 
 
-li {list-style: none; } 
+li { list-style: none; } 
 
 /* */
 
-header {background: linear-gradient(to right, #042e6f, #042e6f 50%, #f2f2f2 50%, #f2f2f2);padding: 0 30px 30px; } 
+header { background: linear-gradient(to right, #042e6f, #042e6f 50%, #f2f2f2 50%, #f2f2f2); padding: 0 30px 30px; } 
 
-header img {width: 100%; } 
+header img { width: 100%; } 
 
-header h1 {position: absolute;left: 30px;top: 0px;z-index: 31; } 
+header h1 { position: absolute; left: 30px; top: 0px; z-index: 31; } 
 
-header > ul {display: flex;position: absolute;right: 30px;top: 0;width: 170px;background: #f2f2f2;z-index: 30; } 
-header > ul > li {flex: 1;line-height: 70px;padding: 0 0 0 14px; } 
-header > ul > li > a::before {display: inline-block;content: "";width: 23px;height: 23px;vertical-align: middle;background: url(https://www.centreville.co.kr/resources/common/img/icon.png); } 
-header > ul > li:first-child > a::before {background-position: 0 0; } 
-header > ul > li:last-child > a::before {background-position: -23px 0; } 
-header #lnb {position: absolute;left: 0;top: 0;width: 100%;padding: 0 232px;z-index: 30; } 
+header > ul { display: flex; position: absolute; right: 30px; top: 0; width: 170px; background: #f2f2f2; z-index: 30; } 
+header > ul > li { flex: 1; line-height: 70px; padding: 0 0 0 14px; } 
+header > ul > li > a::before { display: inline-block; content: ""; width: 23px; height: 23px; vertical-align: middle; background: url(https://www.centreville.co.kr/resources/common/img/icon.png); } 
+header > ul > li:first-child > a::before { background-position: 0 0; } 
+header > ul > li:last-child > a::before { background-position: -23px 0; } 
 
-header #lnb > nav {border-bottom: 1px solid rgba(255, 255, 255, 0.5);font-size: 0;position: relative;z-index: 30; } 
-header #lnb > nav > ul {display: flex;justify-content: center;align-items: center;overflow: hidden; } 
-header #lnb > nav > ul > li {position: relative; } 
-header #lnb > nav > ul > li > a::after {position: absolute;content: "";bottom: -1px;left: 50%;width: 0;height: 2px;background-color: #fff;transition: all 0.4s ease; } 
-header #lnb > nav > ul > li > a {color: rgba(255, 255, 255, 1);font-size: 18px;display: inline-block;width: 160px;height: 69px;line-height: 69px;text-align: center; } 
-header #lnb > nav > ul > li:hover > a::after {width: 100%;left: 0%; } 
+header #lnb { position: absolute; left: 0; top: 0; width: 100%; padding: 0 232px; z-index: 30; } 
+header #lnb > nav { border-bottom: 1px solid rgba(255, 255, 255, 0.5); font-size: 0; position: relative; z-index: 30; } 
+header #lnb > nav > ul { display: flex; justify-content: center; align-items: center; overflow: hidden; } 
+header #lnb > nav > ul > li { position: relative; } 
+header #lnb > nav > ul > li > a::after { position: absolute; content: ""; bottom: -1px; left: 50%; width: 0; height: 2px; background-color: #fff; transition: all 0.4s ease; } 
+header #lnb > nav > ul > li > a { color: rgba(255, 255, 255, 1); font-size: 18px; display: inline-block; width: 160px; height: 69px; line-height: 69px; text-align: center; } 
+header #lnb > nav > ul > li:hover > a::after { width: 100%; left: 0%; } 
 
-header #lnb > nav > ul ul a {font-size: 14px;color: #fff; } 
-header #lnb > nav > ul ul > li > a:hover {color: #2acef1; } 
-header #lnb > nav > ul ul > li > a {position: relative;transition: all 0.2s ease-out; } 
-header #lnb > nav > ul ul > li > a::after {position: absolute;display: inline-block;content: "";width: 0;height: 1.5px;background: #2acef1;left: 50%;bottom: -5px;transition: all 0.3s ease-out; } 
-header #lnb > nav > ul ul > li > a:hover::after {left: 0%;width: 100%; } 
-header #lnb nav > ul ul {position: absolute;width: 100%;height: 250px;text-align: center;line-height: 30px;padding-top: 15px;opacity: 0;transition: all 0.3s ease; } 
-header #lnb ul:hover ul {opacity: 1; } 
+header #lnb > nav > ul ul a { font-size: 14px; color: #fff; } 
+header #lnb > nav > ul ul > li > a:hover { color: #2acef1; } 
+header #lnb > nav > ul ul > li > a { position: relative; transition: all 0.2s ease-out; } 
+header #lnb > nav > ul ul > li > a::after { position: absolute; display: inline-block; content: ""; width: 0; height: 1.5px; background: #2acef1; left: 50%; bottom: -5px; transition: all 0.3s ease-out; } 
+header #lnb > nav > ul ul > li > a:hover::after { left: 0%; width: 100%; } 
+header #lnb nav > ul ul { position: absolute; width: 100%; height: 250px; text-align: center; line-height: 30px; padding-top: 15px; opacity: 0; transition: all 0.3s ease; } 
+header #lnb ul:hover ul { opacity: 1; } 
 
-header #lnb ul:hover {overflow: visible; } 
-header #lnb nav + div {position: absolute;left: 0;top: 0;width: 100%;opacity: 0;background-color: #042e6f;z-index: 29;transition: opacity 0.4s ease; } 
-header #lnb > nav:hover + div {height: 330px;opacity: 1;padding: 0 30px;background-clip: content-box; } 
+header #lnb ul:hover { overflow: visible; } 
+header #lnb nav + div { position: absolute; left: 0; top: 0; width: 100%; opacity: 0; background-color: #042e6f; z-index: 29; transition: opacity 0.4s ease; } 
+header #lnb > nav:hover + div { height: 330px; opacity: 1; padding: 0 30px; background-clip: content-box; } 
