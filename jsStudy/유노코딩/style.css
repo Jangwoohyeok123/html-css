@@ -1,0 +1,11 @@
+* { padding: 0; margin: 0; font-size: 15px; box-sizing: border-box; } 
+
+div { display: inline-block; background-color: rgba(0, 0, 0, 0.6); position: absolute; color: white; left: 35px; border-radius: 0 0 25px 25px; position: relative; } 
+
+span { position: relative; padding: 10px 25px; line-height: 50px; } 
+
+span:hover { cursor: pointer; } 
+
+span::before { position: absolute; content: ""; width: 0; height: 0; background-color: white; left: 23px; bottom: 0; overflow: hidden; } 
+
+span:hover span::before { width: 30px; height: 1px; } 

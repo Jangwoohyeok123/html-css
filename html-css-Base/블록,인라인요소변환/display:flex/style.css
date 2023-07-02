@@ -1,0 +1,15 @@
+* { padding: 0; margin: 0; list-style: none; text-decoration: none; } 
+
+body { margin: 10px; } 
+
+header { position: relative; border: 3px solid red; padding: 15px; display: flex; justify-content: space-between; } 
+header div { border: 1px solid black; padding: 5 10px; } 
+header div:first-child { display: flex; } 
+header .login { position: absolute; right: 10px; top: 0; } 
+
+.container { display: flex; gap: 10px; margin-top: 30px; } 
+.block1,
+.block2,
+.block3 { border: 2px solid blue; flex: 1; height: 200px; } 
+
+
