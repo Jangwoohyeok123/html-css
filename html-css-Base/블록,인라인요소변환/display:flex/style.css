@@ -12,4 +12,9 @@ header .login { position: absolute; right: 10px; top: 0; }
 .block2,
 .block3 { border: 2px solid blue; flex: 1; height: 200px; } 
 
+.block2-box ul { border: 1px dotted forestgreen; padding: 20px; } 
+.block2-box ul li { display: flex; justify-content: space-between; } 
 
+.container { display: grid; grid-template-rows: 1fr 1fr 1fr; grid-template-columns: 2fr 3fr 4fr; } 
+
+.item-1 { grid-area: 1 / 1 / 3 / 3 }; 
